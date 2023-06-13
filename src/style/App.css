@@ -1,0 +1,76 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.saludo{
+  color: blueviolet;
+}
+
+.nav{
+  width: 100vw;
+  height: 15vh;
+  background-color: rgb(233, 211, 10);
+  position: relative;
+}
+.logo{
+  width: 15%;
+  height: 90%;
+  margin: 6px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.418);
+  justify-content: center;
+}
+ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  column-gap: 3vw;
+  justify-content:flex-end;
+
+  
+}
+li{
+  list-style-type:none;
+
+}
+.user{
+
+}
+
+.carousel{
+width: 100vw;
+height: 60vh;
+background-color: aqua;  
+}
+.footer{
+width: 100vw;
+height: 25vh;
+background-color: black;  
+}
+.city{
+width: 100vw;
+height: 25vh;
+background-color: rgb(218, 48, 48);  
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+text-align: end;
+
+}
+button{
+  width: 10vw;
+  height: 3vh;
+  margin: 2vw;
+}

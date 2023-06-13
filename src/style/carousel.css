@@ -1,0 +1,155 @@
+#app {
+    height: 100%;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 90%;
+    height: 70%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+
+}
+
+.autoplay-progress {
+
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+.oneOne {
+    width: 25%;
+    height: 100%;
+    background-color: #d3389f;
+    border: 2px solid #000;
+
+
+}
+
+.oneTwo {
+    width: 25%;
+    height: 100%;
+    background-color: #389ad3;
+    border: 2px solid #000;
+
+}
+
+.oneThree {
+    width: 25%;
+    height: 100%;
+    background-color: #38d352;
+    border: 2px solid #000;
+
+}
+
+.oneFour {
+    width: 25%;
+    height: 100%;
+    background-color: #d37638;
+    border: 2px solid #000;
+
+}
+.twoOne{
+    width: 25%;
+    height: 100%;
+    background-color: #d3389f;
+    border: 2px solid #000;
+}
+.twoTwo{
+    width: 25%;
+    height: 100%;
+    background-color: #389ad3;
+    border: 2px solid #000;
+}
+.twoThree {
+    width: 25%;
+    height: 100%;
+    background-color: #38d352;
+    border: 2px solid #000;
+}
+.twoFour{
+    width: 25%;
+    height: 100%;
+    background-color: #d37638;
+    border: 2px solid #000;
+}
+.threeOne{
+    width: 25%;
+    height: 100%;
+    background-color: #d3389f;
+    border: 2px solid #000;
+}
+.threeTwo{
+    width: 25%;
+    height: 100%;
+    background-color: #389ad3;
+    border: 2px solid #000;
+}
+.threeThree{
+    width: 25%;
+    height: 100%;
+    background-color: #38d352;
+    border: 2px solid #000;
+}
+.threeFour{
+    width: 25%;
+    height: 100%;
+    background-color: #d37638;
+    border: 2px solid #000;
+}
