@@ -2,17 +2,18 @@ import NavBar from "../component/NavBar"
 import CallToAction from "../component/Call-To-Action"
 import Carousel from "../component/Carousel"
 import Footer from "../component/Footer"
+import Footerr from "../component/Footerr"
 
-function Home(){
-    return(
-<>
-<NavBarDos/>
-<Carousel/>
-<Footer/>
-</>
-)
-
-       
-    
+function Home() {
+    return (
+        <>
+            <NavBar />
+            <CallToAction />
+            <Carousel />
+            {/* <Footer /> */}
+            <Footerr />
+        </>
+    )
 }
+
 export default Home

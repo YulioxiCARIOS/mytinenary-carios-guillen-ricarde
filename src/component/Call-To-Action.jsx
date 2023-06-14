@@ -1,9 +1,11 @@
 function CallToAction() {
     return (
         <div className="call-to-action">
-            <h1>MyTinerary</h1>
-            <h3>Find your perfect trip, designed by insiders who know and love their cities</h3>
-            <button className="btn-call-to-action">Cities</button>
+            <div className="title">
+                <h1>My Tinerary</h1>
+                <p>Find your perfect trip, designed by insiders who know and love their cities</p>
+                <button className="btn-call-to-action">Cities</button>
+            </div>
         </div>
     )
 }

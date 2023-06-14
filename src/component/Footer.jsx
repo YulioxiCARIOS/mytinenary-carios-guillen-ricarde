@@ -5,10 +5,6 @@ export default function App() {
   return (
     <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
       <section className='d-flex justify-content-center justify-content-g-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-         
-        </div>
-
         <div>
           <a href='' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
@@ -30,8 +26,7 @@ export default function App() {
           </a>
         </div>
       </section>
-
-      <section className=''>
+      <section className='border-bottom2'>
         <MDBContainer className='text-center text-md-start mt-5'>
           <MDBRow className='mt-3'>
             <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>

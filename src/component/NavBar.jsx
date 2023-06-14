@@ -8,15 +8,15 @@ import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import { Link as RouterLink } from 'react-router-dom';
+import Button from '@mui/material/Button'; 
+import { Link as LinkRouter } from 'react-router-dom';
 
 const pages = [
   {
-    name:'Home',
-    path:'/Home'
+    name:"Home",
+    path:"/Home"
   },
   {
     name: 'Cities',
@@ -24,15 +24,7 @@ const pages = [
   },
 ];
 
-    <div>
-    <div className="nav">
-    <div className="logo"><img src="#" alt="" /></div>
-    <ul>
-        <li>Home</li>
-
-        <li> <FaUserCircle/> </li>
-    </ul>
-    </div>
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -54,26 +46,25 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src="../resourses/Icon.png" alt="" />
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/"
+            component={LinkRouter}
+            to="/"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
+              fontFamily: 'Poppins',
               fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
+              color: '#F8BD31',
               textDecoration: 'none',
             }}
           >
-            LOGO
+          <div className='logo'></div>
+          My Tinerary
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -109,7 +100,7 @@ function NavBar() {
                 <MenuItem key={page.name} onClick={handleCloseNavMenu}>
                   <Typography
                     textAlign="center"
-                    component={RouterLink}
+                    component={LinkRouter}
                     to={page.path}
                     variant="body1"
                   >
@@ -124,7 +115,7 @@ function NavBar() {
             {pages.map((page) => (
               <Button
                 key={page.name}
-                component={RouterLink}
+                component={LinkRouter}
                 to={page.path}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}

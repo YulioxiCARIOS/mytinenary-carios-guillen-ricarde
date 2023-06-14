@@ -54,7 +54,7 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: var(--swiper-theme-color);
+    color: #151C2E;
 }
 
 .autoplay-progress svg {
@@ -66,7 +66,7 @@ body {
     width: 100%;
     height: 100%;
     stroke-width: 4px;
-    stroke: var(--swiper-theme-color);
+    stroke: #151C2E;
     fill: none;
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
@@ -74,82 +74,109 @@ body {
 }
 
 .oneOne {
-    width: 25%;
-    height: 100%;
-    background-color: #d3389f;
-    border: 5px solid white;
-
-
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/1.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
 
 .oneTwo {
-    width: 25%;
-    height: 100%;
-    background-color: #389ad3;
-    border: 5px solid white;
-
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/2.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
 
 .oneThree {
-    width: 25%;
-    height: 100%;
-    background-color: #38d352;
-    border: 5px solid white;
-
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/3.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
 
 .oneFour {
-    width: 25%;
-    height: 100%;
-    background-color: #d37638;
-    border: 5px solid white;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/4.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
 
-}
 .twoOne{
-    width: 25%;
-    height: 100%;
-    background-color: #d3389f;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/5.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .twoTwo{
-    width: 25%;
-    height: 100%;
-    background-color: #389ad3;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/6.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .twoThree {
-    width: 25%;
-    height: 100%;
-    background-color: #38d352;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/7.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .twoFour{
-    width: 25%;
-    height: 100%;
-    background-color: #d37638;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/8.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .threeOne{
-    width: 25%;
-    height: 100%;
-    background-color: #d3389f;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/9.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .threeTwo{
-    width: 25%;
-    height: 100%;
-    background-color: #389ad3;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/10.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .threeThree{
-    width: 25%;
-    height: 100%;
-    background-color: #38d352;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/11.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
+
 .threeFour{
-    width: 25%;
-    height: 100%;
-    background-color: #d37638;
-    border: 2px solid #000;
+    width: 300px;
+    height: 250px;
+    background-image: url(../resourses/12.svg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
 }
