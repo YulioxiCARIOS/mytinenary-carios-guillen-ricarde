@@ -1,76 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
 *{
   margin: 0%;
   padding: 0%;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 .app{
   width: 100vw;
   height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-.saludo{
-  color: blueviolet;
+
+
+
+
+
+
+
+.app-bar{
+  background-color: #015989 !important;
+  height: 10% !important;
 }
 
-.nav{
-  width: 100vw;
-  height: 15vh;
-  background-color: rgb(233, 211, 10);
-  position: relative;
-}
-.logo{
-  width: 15%;
-  height: 90%;
-  margin: 6px;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.418);
-  justify-content: center;
-}
-ul{
+.call-to-action{
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  column-gap: 3vw;
-  justify-content:flex-end;
-
-  
-}
-li{
-  list-style-type:none;
-
-}
-.user{
-
+  background-image: url(../resourses/aaa.JPG);
+  background-position: center;
+  height: 30%;
 }
 
-.carousel{
+.css-1mclfdm-MuiContainer-root{
+  height: 10% !important;
+}
+
+
+.mySwiper{
 width: 100vw;
-height: 60vh;
-background-color: aqua;  
+height: 40% !important;
+padding: 20px !important;
 }
+
+
 .footer{
 width: 100vw;
-height: 25vh;
-background-color: black;  
-}
-.city{
-width: 100vw;
-height: 25vh;
-background-color: rgb(218, 48, 48);  
-display: flex;
-justify-content: flex-end;
-align-items: flex-end;
-text-align: end;
-
-}
-button{
-  width: 10vw;
-  height: 3vh;
-  margin: 2vw;
+height: 150px;
+background-color: #015989;  
 }

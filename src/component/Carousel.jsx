@@ -12,7 +12,7 @@ import '../style/carousel.css';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
 
-export default function App() {
+export default function Carrousel() {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
@@ -22,10 +22,10 @@ export default function App() {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={50}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         pagination={{

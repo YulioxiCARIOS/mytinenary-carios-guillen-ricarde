@@ -77,7 +77,7 @@ body {
     width: 25%;
     height: 100%;
     background-color: #d3389f;
-    border: 2px solid #000;
+    border: 5px solid white;
 
 
 }
@@ -86,7 +86,7 @@ body {
     width: 25%;
     height: 100%;
     background-color: #389ad3;
-    border: 2px solid #000;
+    border: 5px solid white;
 
 }
 
@@ -94,7 +94,7 @@ body {
     width: 25%;
     height: 100%;
     background-color: #38d352;
-    border: 2px solid #000;
+    border: 5px solid white;
 
 }
 
@@ -102,7 +102,7 @@ body {
     width: 25%;
     height: 100%;
     background-color: #d37638;
-    border: 2px solid #000;
+    border: 5px solid white;
 
 }
 .twoOne{
