@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 import './style/App.css';
 import Footer from './component/Footer';
-import NavBar from './component/NavBar';
+//import NavBar from './component/NavBar';
 import Carousel from './component/Carousel';
 import Cities from './component/Cities';
 import NavBarDos from './component/NavBarDos';

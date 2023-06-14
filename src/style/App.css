@@ -45,20 +45,14 @@ li{
   list-style-type:none;
 
 }
-.user{
 
-}
 
 .carousel{
 width: 100vw;
 height: 60vh;
 background-color: aqua;  
 }
-.footer{
-width: 100vw;
-height: 25vh;
-background-color: black;  
-}
+
 .city{
 width: 100vw;
 height: 25vh;

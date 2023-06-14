@@ -7,7 +7,6 @@ function Home(){
     return(
 <>
 <NavBarDos/>
-<Cities/>
 <Carousel/>
 <Footer/>
 </>
