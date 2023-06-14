@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import './style/App.css';
-import { Routes, Route } from "react-router-dom";
-import Home from "./component/Home";
+import Footer from './component/Footer';
+//import NavBar from './component/NavBar';
+import Carousel from './component/Carousel';
 import Cities from './component/Cities';
 
 //-----LOGICA------
