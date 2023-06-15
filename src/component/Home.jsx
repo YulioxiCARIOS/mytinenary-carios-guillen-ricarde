@@ -10,7 +10,7 @@ function Home() {
             <NavBar />
             <CallToAction />
             <Carousel />
-            {/* <Footer /> */}
+         
             <Footerr />
         </>
     )

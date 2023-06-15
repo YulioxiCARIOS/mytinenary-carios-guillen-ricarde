@@ -7,11 +7,13 @@ function Footerr() {
     return (
         <div className="footer">
             <div className="footer-row">
-                <div>
-                    <div className="logo"></div>
-                    <div><div className="twitter">
-                        <FaTwitter />
-                    </div>
+               
+                <div className="log-redes">
+
+                    <div className="red">
+                        <div className="twitter">
+                            <FaTwitter />
+                        </div>
                         <div className="facebook">
                             <FaFacebookF />
                         </div>
@@ -23,14 +25,14 @@ function Footerr() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="links">
                     <h4>Links</h4>
                     <ul>
                         <li>Home</li>
                         <li>Cities</li>
                     </ul>
                 </div>
-                <div>
+                <div className="other">
                     <h4>Other Links</h4>
                     <ul>
                         <li>Legal Warning</li>
@@ -38,13 +40,15 @@ function Footerr() {
                         <li>Terms and Conditions</li>
                     </ul>
                 </div>
-                <div>
+                <div className="quick">
                     <h4>Quick Contact</h4>
                     <ul>
                         <li>+123-456-7890</li>
                         <li>MyTinerary@gmail.com</li>
                         <li>Federal Capital, Argentina</li>
-                    </ul></div>
+                    </ul>
+                </div>
+                <div className="logo"></div>
             </div>
             <div className="copyright">
                 <p>Copyright @ 2023 by Carios-Guillen-Ricarde</p>
