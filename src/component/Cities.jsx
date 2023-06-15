@@ -1,12 +1,15 @@
 import NavBar from "../component/NavBar"
-import Footerr from "../component/Footerr"
+import Footerr from "./Footer"
+import { FaExclamationTriangle } from "react-icons/fa";
 
 function Cities() {
     return (
         <>
             <NavBar />
-            <div className="city">
-                <h1>EN construccion</h1>
+            <div className="cities">
+                <FaExclamationTriangle className="exclamation-triangle"/>
+                <h1>WEB SITE</h1>
+                <h3>UNDER CONSTRUCTION</h3>
             </div>
             <Footerr />
         </>

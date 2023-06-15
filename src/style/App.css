@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
 
+:root{
+  --blue1:#151C2E;
+  --blue2:#0B0E17;
+  --yellow:#F8BD31;
+}
+
 * {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif !important;
   margin: 0%;
   padding: 0%;
-  font-family: 'Poppins', sans-serif !important;
 }
 
 .app {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,61 +23,76 @@
   text-align: center;
 }
 
-.css-11b3ww9-MuiPaper-root-MuiAppBar-root{
-  background-color: #151C2E !important;
+/* STYLES NAVBAR */
+
+#root > div > header{
+  background-color: var(--blue1);
   width: 100%;
-  height: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 66.97px;
+  padding: 0px 25px;
 }
 
-.logo {
-  background-image: url(../resourses/Logo.svg);
+.logo-navbar {
+  background-image: url(../img/Logo.svg);
   background-size: cover;
   background-position: center;
-  width: 50px;
+  width:50px;
   height:50px;
   cursor: pointer;
-
 }
 
-.css-ywp6kv-MuiTypography-root{
+.title-navbar{
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--yellow);
+  padding-right: 15px;
+  margin: 0px;
+}
+
+#root > div > header > div > div{
+  height: 66.97px;
+}
+
+#root > div > header > div > div > div.MuiBox-root.css-1t6c9ts{
+  height: 66.97px;
+  gap: 15px;
+}
+
+#root > div > header > div > div > div.MuiBox-root.css-1t6c9ts > a{
+  font-size: 15px;
+}
+
+#root > div > header > div > div > div.MuiBox-root.css-1t6c9ts > a:hover{
+  background-color: var(--yellow);
+  color: white;
+}
+
+#menu-appbar > div.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper > ul > li > a{
+  color: #000000DE;
+} 
+
+#root > div > header > div > div > div.MuiBox-root.css-2uchni > button > div{
+  background-color: var(--yellow);
+}
+
+/* STYLES CALL TO ACTION */
+
+.call-to-action{
+  background: linear-gradient(to top, rgba(21, 28, 46, 0.1),
+      rgba(21, 28, 46, 1)), url(../img/Fondo.jpeg);
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: calc(100vh - 66.97px);
+  padding: 25px;
+  margin-top: 66.97px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.css-ywp6kv-MuiTypography-root:hover{
-  color: #F8BD31;
-}
-
-.css-1q39md6-MuiButtonBase-root-MuiButton-root:hover{
-  color: white;
-  background-color: #F8BD31;
-}
-
-
-
-
-.css-hip9hq-MuiPaper-root-MuiAppBar-root {
-  height: 10% !important;
-}
-
-.call-to-action {
-  background: linear-gradient(to top, rgba(21, 28, 46, 0.1),
-      rgba(21, 28, 46, 1)), url(../resourses/Fondo.jpeg);
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: top;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.title{
+.call-to-action .title{
   color: white;
   height: 100%;
   width: 100%;
@@ -80,79 +102,119 @@
   align-items: center;
 }
 
-.title h1{
+.call-to-action .title h1{
+  font-size: 50px;
   font-weight: 900;
 }
 
-
 .btn-call-to-action{
-  background-color: #F8BD31;
+  background-color: var(--yellow);
   color: white;
   width: auto;
   height: auto;
   border: none;
-  border-radius: 2.5px;
   padding: 5px 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px var(--yellow), 0 0 40px var(--yellow), 0 0 80px var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation: fliker 2.5s infinite backwards;
+}
+
+@keyframes fliker{
+  to{
+    background-color: var(--blue1);
+    box-shadow: 0 0 10px var(--blue1), 0 0 40px var(--blue1), 0 0 80px var(--blue1);
+  }
+}
+
+/* STYLES CARROUSEL */
+
+.title-carousel{
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--blue1);
+  padding: 50px 25px 25px 25px;
 }
 
 .mySwiper {
-  height: auto !important;
-  padding: 50px !important;
+  padding: 0px 25px 25px 25px !important;
+  margin-bottom: 50px !important;
 }
 
-.text-muted {
-  width: 100%;
-}
+/* Continues In Page Carousel.css */
 
-.border-bottom,
-.border-bottom2 {
-  background-color: #015989;
-}
-
-
-.city {
-  width: 100%;
-  height: 75vh;
-  background-color: rgb(218, 48, 48);
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  text-align: end;
-
-}
-
-button {
-  width: 10vw;
-  height: 3vh;
-  margin: 2vw;
-}
+/* STYLES FOOTER */
 
 .footer {
+  background-color: var(--blue1);
   width: 100%;
+  height: 100%;
 }
 
 .footer-row {
-  height: 25vh;
-  background-color: #151C2E;
-  padding: 25px;
+  padding: 50px 25px;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  align-items: baseline;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
+.footer-row > div{
+  color: #444958;
+  width: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-row > div > h4{
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--blue2);
+}
+
+.footer-row > div > h3{
+  font-size: 17.5px;
+  font-weight: 900;
+}
+
+.footer-row > div > p{
+  font-size: 12.5px;
+}
+
+.logos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rrss{
+  display: flex;
+  gap: 15px;
+}
 
 .twitter,
 .facebook,
 .instagram,
 .youtube {
-  color: white;
   width: 25px;
   height: 25px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.twitter a,
+.facebook a,
+.instagram a,
+.youtube a{
+  color: white;
 }
 
 .twitter {
@@ -176,49 +238,66 @@ button {
 }
 
 .copyright {
-  background-color: #0B0E17;
+  padding: 10px;
+  background-color: var(--blue2);
 }
 
 .copyright p {
-  margin: none;
+  color: #444958;
+  margin: 0;
 }
-.log-redes{
- 
-  
-  display: flex;
-  flex-direction: column;
 
+.footer ul{
+  margin: 0px;
+  padding: 0px;
 }
-.red{
+
+.footer ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+
+/*PAGE CITIES*/
+
+.cities{
+  background-color: var(--yellow);
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  row-gap: 3vh;
-  
-  
 }
-.links ul li {
-list-style-type: none;
-cursor: pointer;
-line-height:4vh
 
-
+.exclamation-triangle{
+  color: var(--blue1);
+  width: 100px;
+  height: 100px;
 }
-.other ul li {
-  list-style-type: none;
-  line-height:4vh
 
-  
-  }
-.quick ul li {
-  list-style-type: none;
-  line-height:4vh
+.cities h1{
+  font-size: 75px;
+  font-weight: 900;
+  color: white;
+  margin: 0px;
+}
 
-  
-  }
-  ol, ul{
-    padding-left: 0rem !important;
-    
-  }
+.cities h3{
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--blue2);
+}
+
+.logo-footer{
+  background-image: url(../img/LogoFooter.svg);
+  background-size: cover;
+  background-position: center;
+  width: 75px;
+  height: 75px;
+  margin-bottom: 7.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

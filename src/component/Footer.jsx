@@ -1,120 +1,73 @@
-import React from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { useNavigate } from 'react-router-dom';
+import InstagramLink from "./LinkInsta";
+import FacebookLink from "./LinkFace";
+import TwitwLink from "./LinkTwi";
+import YouTLink from "./LinkYouT";
 
-export default function App() {
-  return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-g-between p-4 border-bottom'>
-        <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='facebook-f' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='twitter' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='google' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='instagram' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='github' />
-          </a>
+function Footer() {
+
+    const navigate = useNavigate();
+
+    const clickToHome = () => {
+        navigate('/Home'); // Ruta a la que se redirigirá al hacer clic en el botón
+    };
+    const clickToCities = () => {
+        navigate('/Cities'); // Ruta a la que se redirigirá al hacer clic en el botón
+    };
+
+    return (
+        <div className="footer">
+            <div className="footer-row">
+                <div className="logos">
+                    <h4>About Us</h4>
+                    <div className="logo-footer" onClick={clickToHome}></div>
+                    <h3>My Tinerary</h3>
+                    <p>Find your perfect trip, designed by insiders who know and love their cities.</p>
+                    <div className="rrss">
+                        <div className="twitter">
+                            <TwitwLink />
+                        </div>
+                        <div className="facebook">
+                            <FacebookLink />
+                        </div>
+                        <div className="instagram">
+                            < InstagramLink />
+                        </div>
+                        <div className="youtube">
+                            <YouTLink />
+                        </div>
+                    </div>
+                </div>
+                <div className="links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li onClick={clickToHome}> Home</li>
+                        <li onClick={clickToCities}> Cities</li>
+                    </ul>
+                </div>
+                <div className="others-links">
+                    <h4>Others Links</h4>
+                    <ul>
+                        <li> Legal Warning</li>
+                        <li> Privacy Policy</li>
+                        <li> Terms and Conditions</li>
+                    </ul>
+                </div>
+                <div className="quick-contact">
+                    <h4>Quick Contact</h4>
+                    <ul>
+                        <li> +123-456-7890</li>
+                        <li> MyTinerary@gmail.com</li>
+                        <li> Federal Capital, Argentina</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div className="copyright">
+                <p>Copyright @ 2023 by Carios-Guillen-Ricarde</p>
+            </div>
         </div>
-      </section>
-      <section className='border-bottom2'>
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md='3' lg='4' xl='3' className='mx-auto mb-4'>
-              <h5 className='text-uppercase fw-bold mb-4'>
-                <MDBIcon color='secondary' icon='gem' className='me-3' />
-                MY ITINERARY
-              </h5>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
-              </p>
-            </MDBCol>
-
-            <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
-              <h5 className='text-uppercase fw-bold mb-4'>Products</h5>
-              <p>
-                <a href='#!' className='text-reset'>
-                 Cities
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                {/* "*" */}
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                 {/* "*" */}
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  {/* "*" */}
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-              <h5 className='text-uppercase fw-bold mb-4'>Useful links</h5>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  {/* "*" */}
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                 {/* "*" */}
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  {/* "*" */}
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
-              <h5 className='text-uppercase fw-bold mb-4'>Contact</h5>
-              <p>
-                <MDBIcon color='secondary' icon='home' className='me-2' />
-                Buenos Aires, Argentina
-              </p>
-              <p>
-                <MDBIcon color='secondary' icon='envelope' className='me-3' />
-                mytinerary@gmail.com
-              </p>
-              <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 54 911 123 45 67
-              </p>
-              <p>
-                <MDBIcon color='secondary' icon='print' className='me-3' /> + 54 911 654 32 10
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </section>
-
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-        © 2021 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
-          MYTINERARY.
-        </a>
-      </div>
-    </MDBFooter>
-  );
+    )
 }
+
+export default Footer

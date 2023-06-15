@@ -6,50 +6,35 @@ html,
 body {
     position: relative;
     height: 100%;
-}
-
-body {
-    background: #fff;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
+    width: 100%;
 }
 
 .swiper {
     width: 100%;
-    height: 70%;
+    height: 100%;
 }
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
+.swiper-button-next, .swiper-button-prev{
+    color: #151C2E;
+}
 
-    /* Center slide text vertically */
+.swiper-pagination-horizontal{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: row;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-
+.swiper-pagination-bullet-active{
+    background-color: #151C2E;
 }
 
 .autoplay-progress {
-
     position: absolute;
-    right: 16px;
-    bottom: 16px;
+    right: 20px;
+    bottom: 0px;
+    width: 25px;
+    height: 25px;
     z-index: 10;
-    width: 48px;
-    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,10 +47,10 @@ body {
     position: absolute;
     left: 0;
     top: 0px;
-    z-index: 10;
     width: 100%;
     height: 100%;
-    stroke-width: 4px;
+    z-index: 10;
+    stroke-width: 5px;
     stroke: #151C2E;
     fill: none;
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
@@ -73,112 +58,105 @@ body {
     transform: rotate(-90deg);
 }
 
-.oneOne {
+.SwiperSlide{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.SwiperSlide div{
+    position: relative;
     width: 300px;
-    height: 250px;
-    background-image: url(../resourses/1.svg);
+    height: 300px;
     background-size: cover;
     background-position: center;
-    margin: 5px;
+}
 
+.SwiperSlide div div{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+}
 
+.SwiperSlide div div .blue{
+    position: absolute;
+    background-color: #151C2E;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 25px;
+    display: flex;
+}
+
+.SwiperSlide div div .blue p{
+    font-size: 12.5px;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SwiperSlide div div .yellow{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/Location.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.oneOne{
+    background-image: url(../img/1.svg);
 }
 
 .oneTwo {
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/2.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/2.svg);
 }
 
 .oneThree {
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/3.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/3.svg);
 }
 
 .oneFour {
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/4.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/4.svg);
 }
 
 .twoOne{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/5.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/5.svg);
 }
 
 .twoTwo{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/6.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/6.svg);
 }
 
 .twoThree {
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/7.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/7.svg);
 }
 
 .twoFour{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/8.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/8.svg);
 }
 
 .threeOne{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/9.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/9.svg);
 }
 
 .threeTwo{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/10.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/10.svg);
 }
 
 .threeThree{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/11.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/11.svg);
 }
 
 .threeFour{
-    width: 300px;
-    height: 250px;
-    background-image: url(../resourses/12.svg);
-    background-size: cover;
-    background-position: center;
-    margin: 5px;
+    background-image: url(../img/12.svg);
 }

@@ -49,23 +49,8 @@ function NavBar() {
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component={LinkRouter}
-            to="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'Poppins',
-              fontWeight: 700,
-              color: '#F8BD31',
-              textDecoration: 'none',
-            }}
-          >
-          <div className='logo'></div>
-          My Tinerary
-          </Typography>
+          <div className="logo-navbar"></div>
+          <h1 className="title-navbar">My Tinerary</h1>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -128,7 +113,7 @@ function NavBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="U" src="/static/images/avatar/2.jpg" />
               </IconButton>
             </Tooltip>
             <Menu
