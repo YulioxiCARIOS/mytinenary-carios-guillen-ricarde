@@ -2,8 +2,24 @@ import { FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+import InstagramLink from "./LinkInsta";
+import FacebookLink from "./LinkFace";
+import TwitwLink from "./LinkTwi";
+import YouTLink from "./LinkYouT";
 
 function Footerr() {
+ 
+    const navigate = useNavigate();
+
+    const clickToHome = () => {
+      navigate('/Home'); // Ruta a la que se redirigirá al hacer clic en el botón
+    };
+    const clickToCities = () => {
+        navigate('/Cities'); // Ruta a la que se redirigirá al hacer clic en el botón
+      };
+      
+
     return (
         <div className="footer">
             <div className="footer-row">
@@ -12,24 +28,24 @@ function Footerr() {
 
                     <div className="red">
                         <div className="twitter">
-                            <FaTwitter />
+                            <TwitwLink />
                         </div>
                         <div className="facebook">
-                            <FaFacebookF />
+                            <FacebookLink  />
                         </div>
                         <div className="instagram">
-                            <FaInstagram />
+                           < InstagramLink/>
                         </div>
                         <div className="youtube">
-                            <FaYoutube />
+                            <YouTLink />
                         </div>
                     </div>
                 </div>
                 <div className="links">
                     <h4>Links</h4>
                     <ul>
-                        <li>Home</li>
-                        <li>Cities</li>
+                        <li onClick={clickToHome}>Home</li>
+                        <li onClick={clickToCities}>Cities</li>
                     </ul>
                 </div>
                 <div className="other">
@@ -48,7 +64,7 @@ function Footerr() {
                         <li>Federal Capital, Argentina</li>
                     </ul>
                 </div>
-                <div className="logo"></div>
+                <div className="logo" onClick={clickToHome}></div>
             </div>
             <div className="copyright">
                 <p>Copyright @ 2023 by Carios-Guillen-Ricarde</p>
