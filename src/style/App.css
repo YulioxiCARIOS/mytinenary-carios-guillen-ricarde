@@ -47,6 +47,7 @@
   color: var(--yellow);
   padding-right: 15px;
   margin: 0px;
+  cursor: pointer;
 }
 
 #root > div > header > div > div{
