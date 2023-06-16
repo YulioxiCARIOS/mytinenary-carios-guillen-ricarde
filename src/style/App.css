@@ -47,6 +47,7 @@
   color: var(--yellow);
   padding-right: 15px;
   margin: 0px;
+  cursor: pointer;
 }
 
 #root > div > header > div > div{
@@ -119,7 +120,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  margin-top: 20px;
   animation: fliker 2.5s infinite backwards;
 }
 

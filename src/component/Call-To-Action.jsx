@@ -12,7 +12,7 @@ function CallToAction() {
     <div className="call-to-action">
       <div className="title">
         <h1>My Tinerary</h1>
-        <p>Find your perfect trip, designed by insiders who know and love their cities</p>
+        <h4>Find your perfect trip, designed by insiders who know and love their cities</h4>
         <button className="btn-call-to-action" onClick={clickToAction}><FaGlobe /> CITIES</button>
       </div>
     </div>

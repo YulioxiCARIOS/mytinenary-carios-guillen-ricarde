@@ -1,6 +1,4 @@
-import { FaLocation } from "react-icons/fa";
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 
@@ -8,8 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-import '../style/Carousel.css';
+import '../style/carousel.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
