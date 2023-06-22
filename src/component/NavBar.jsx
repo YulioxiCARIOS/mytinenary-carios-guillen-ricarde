@@ -12,13 +12,13 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Button from '@mui/material/Button';
 import { Link as LinkRouter } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const pages = [
-  {
-    name: "Home",
-    path: "/Home"
-  },
+  // {
+  //   name:"Home",
+  //   path:"/Home"
+  // },
   {
     name: 'Cities',
     path: '/Cities'
@@ -45,16 +45,13 @@ function NavBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const navigate = useNavigate();
-  const clickToHome = () => {
-    navigate('/Home'); // Ruta a la que se redirigirá al hacer clic en el botón
-  };
+
   return (
     <AppBar position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <div onClick={clickToHome} className="logo-navbar"></div>
-          <h1 onClick={clickToHome} className="title-navbar">My Tinerary</h1>
+          <div className="logo-navbar"></div>
+          <h1 className="title-navbar">My Tinerary</h1>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton

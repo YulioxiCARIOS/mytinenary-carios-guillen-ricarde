@@ -21,7 +21,7 @@ function Footer() {
                 <div className="logos">
                     <h4>About Us</h4>
                     <div className="logo-footer" onClick={clickToHome}></div>
-                    <h3>My Tinerary</h3>
+                    <h3 onClick={clickToHome}>My Tinerary</h3>
                     <p>Find your perfect trip, designed by insiders who know and love their cities.</p>
                     <div className="rrss">
                         <div className="twitter">
@@ -41,7 +41,7 @@ function Footer() {
                 <div className="links">
                     <h4>Links</h4>
                     <ul>
-                        <li onClick={clickToHome}> Home</li>
+                        {/* <li onClick={clickToHome}> Home</li> */}
                         <li onClick={clickToCities}> Cities</li>
                     </ul>
                 </div>
