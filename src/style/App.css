@@ -307,3 +307,9 @@
   align-items: center;
   cursor: pointer;
 }
+
+.image-cities{
+  background-image: url(../img/Amstermdam\(Netherlands\).svg);
+  height: 200px;
+  width: 200px;
+}
