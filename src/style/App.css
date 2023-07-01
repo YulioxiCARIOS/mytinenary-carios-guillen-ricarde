@@ -309,7 +309,8 @@
 }
 
 .image-cities{
-  background-image: url(../img/Amstermdam\(Netherlands\).svg);
-  height: 200px;
-  width: 200px;
+  width: auto;
+  height: auto;
+  background-size: contain;
+
 }
