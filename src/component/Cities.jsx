@@ -40,8 +40,9 @@ function Cities() {
                                         <h2>{city.name}, <span>{city.country}</span></h2>
                                     </div>
                                 </div>
-                                <div className="hover">
-                                    {city.description}
+                                <div className="card-cities-hover">
+                                    <h3>Details:</h3>
+                                    <p>{city.description}</p>
                                     <LinkRouter to={'/CityDetails/'+city._id}><button >See Details</button></LinkRouter>
                                 </div>
                             </div>

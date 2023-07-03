@@ -23,9 +23,16 @@ function CityDetails() {
     return (
         <>
             <NavBar />
-            <div className="main">
+            <div className="main-citydetails">
                 {city.length > 0 ?
-                    <img className="image-city" src={city[0].image} alt="" />
+                    <div className="image">
+                        <img className="image-city" src={city[0].image} alt="" />
+                        <div className="citydetails-text">
+                            <h2>{city[0].name}</h2>
+                            <h4>{city[0].country}</h4>
+                        </div>
+                    </div>
+
                     : <h1>Loading...</h1>}
             </div >
             <Footer />
