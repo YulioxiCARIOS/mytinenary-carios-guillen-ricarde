@@ -2,10 +2,10 @@
 
 
 
-:root{
-  --blue1:#151C2E;
-  --blue2:#0B0E17;
-  --yellow:#F8BD31;
+:root {
+  --blue1: #151C2E;
+  --blue2: #0B0E17;
+  --yellow: #F8BD31;
 }
 
 * {
@@ -27,7 +27,7 @@
 
 /* STYLES NAVBAR */
 
-#root > div > header{
+#root>div>header {
   background-color: var(--blue1);
   width: 100%;
   height: 66.97px;
@@ -38,12 +38,12 @@
   background-image: url(../img/Logo.svg);
   background-size: cover;
   background-position: center;
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
 }
 
-.title-navbar{
+.title-navbar {
   font-size: 20px;
   font-weight: 900;
   color: var(--yellow);
@@ -52,35 +52,35 @@
   cursor: pointer;
 }
 
-#root > div > header > div > div{
+#root>div>header>div>div {
   height: 66.97px;
 }
 
-#root > div > header > div > div > div.MuiBox-root.css-1t6c9ts{
+#root>div>header>div>div>div.MuiBox-root.css-1t6c9ts {
   height: 66.97px;
   gap: 15px;
 }
 
-#root > div > header > div > div > div.MuiBox-root.css-1t6c9ts > a{
+#root>div>header>div>div>div.MuiBox-root.css-1t6c9ts>a {
   font-size: 15px;
 }
 
-#root > div > header > div > div > div.MuiBox-root.css-1t6c9ts > a:hover{
+#root>div>header>div>div>div.MuiBox-root.css-1t6c9ts>a:hover {
   background-color: var(--yellow);
   color: white;
 }
 
-#menu-appbar > div.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper > ul > li > a{
+#menu-appbar>div.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper>ul>li>a {
   color: #000000DE;
-} 
+}
 
-#root > div > header > div > div > div.MuiBox-root.css-2uchni > button > div{
+#root>div>header>div>div>div.MuiBox-root.css-2uchni>button>div {
   background-color: var(--yellow);
 }
 
 /* STYLES CALL TO ACTION */
 
-.call-to-action{
+.call-to-action {
   background: linear-gradient(to top, rgba(21, 28, 46, 0.1),
       rgba(21, 28, 46, 1)), url(../img/Fondo.jpeg);
   background-size: cover;
@@ -95,7 +95,7 @@
   align-items: center;
 }
 
-.call-to-action .title{
+.call-to-action .title {
   color: white;
   height: 100%;
   width: 100%;
@@ -105,12 +105,12 @@
   align-items: center;
 }
 
-.call-to-action .title h1{
+.call-to-action .title h1 {
   font-size: 50px;
   font-weight: 900;
 }
 
-.btn-call-to-action{
+.btn-call-to-action {
   background-color: var(--yellow);
   color: white;
   width: auto;
@@ -127,8 +127,8 @@
   animation: fliker 2.5s infinite backwards;
 }
 
-@keyframes fliker{
-  to{
+@keyframes fliker {
+  to {
     background-color: var(--blue1);
     box-shadow: 0 0 10px var(--blue1), 0 0 40px var(--blue1), 0 0 80px var(--blue1);
   }
@@ -136,7 +136,7 @@
 
 /* STYLES CARROUSEL */
 
-.title-carousel{
+.title-carousel {
   font-size: 30px;
   font-weight: 900;
   color: var(--blue1);
@@ -167,7 +167,7 @@
   gap: 50px;
 }
 
-.footer-row > div{
+.footer-row>div {
   color: #444958;
   width: 250px;
   height: 100%;
@@ -175,29 +175,29 @@
   flex-direction: column;
 }
 
-.footer-row > div > h4{
+.footer-row>div>h4 {
   font-size: 20px;
   font-weight: 900;
   color: var(--blue2);
 }
 
-.footer-row > div > h3{
+.footer-row>div>h3 {
   font-size: 17.5px;
   font-weight: 900;
 }
 
-.footer-row > div > p{
+.footer-row>div>p {
   font-size: 12.5px;
 }
 
-.logos{
+.logos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.rrss{
+.rrss {
   display: flex;
   gap: 15px;
 }
@@ -217,7 +217,7 @@
 .twitter a,
 .facebook a,
 .instagram a,
-.youtube a{
+.youtube a {
   color: white;
 }
 
@@ -251,7 +251,7 @@
   margin: 0;
 }
 
-.footer ul{
+.footer ul {
   margin: 0px;
   padding: 0px;
 }
@@ -261,42 +261,7 @@
   cursor: pointer;
 }
 
-
-/*PAGE CITIES*/
-
-
-
-
-/* .cities{
-  background-color: var(--yellow);
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-.exclamation-triangle{
-  color: var(--blue1);
-  width: 100px;
-  height: 100px;
-}
-
-.cities h1{
-  font-size: 75px;
-  font-weight: 900;
-  color: white;
-  margin: 0px;
-}
-
-.cities h3{
-  font-size: 30px;
-  font-weight: 900;
-  color: var(--blue2);
-}
-
-.logo-footer{
+.logo-footer {
   background-image: url(../img/LogoFooter.svg);
   background-size: cover;
   background-position: center;
@@ -309,28 +274,130 @@
   cursor: pointer;
 }
 
+/*PAGE CITIES*/
 
-.main{
+.main-cities {
   padding: calc(66.97px + 50px) 50px 50px 50px;
 }
 
-.card-content-cities{
-  display: inline-flex;
+.search{
+  display: flex;
+  flex-direction: row;
+}
+
+.search-icon{
+  background-color: var(--yellow);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px 0px 0px 25px;
+}
+
+input{
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 25px 25px 0px;
+  border: 1px solid var(--yellow);
+}
+
+.card-container-cities {
+  margin-top: 50px;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 50px;
 }
 
-.card-cities{
+.card-cities {
   position: relative;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.25);
   width: 300px;
-} 
-
-.image-cities{
-  background-image: url(../img/Amstermdam\(Netherlands\).svg);
-  height: 200px;
-  width: 200px;
+  height: 275px;
 }
 
+.image-cities{
+  width: 300px;
+  height: 250px;
+  border-bottom: 1px solid white;
+}
+
+.row-cities {
+  display: flex;
+  flex-direction: row;
+}
+
+.location-cities {
+  background-image: url(../img/Location.svg);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.text-cities{
+  background-color: var(--blue1);
+  width: 275px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-cities h3{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+}
+
+.text-cities h3 span{
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin: 0px;
+}
+
+.card-cities-hover{
+  position: absolute;
+  background-color: var(--yellow);
+  top: 0px; left: 0px;
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  border-bottom: 1px solid white;
+  opacity: 0;
+}
+
+.card-cities-hover:hover{
+  opacity: 1;
+}
+
+.card-cities-hover h4{
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+}
+
+.card-cities-hover p{
+  font-size: 12.5px;
+  color: white;
+  height: 120px;
+  margin-bottom: 15px;
+}
+
+.card-cities-hover .btn-cities{
+  font-size: 15px;
+  color: white;
+  background-color: var(--blue1);
+  padding: 5px 10px;
+  border: none;
+}
+
+.btn-top{
+  font-size: 15px;
+  color: white;
+  background-color: var(--yellow);
+  padding: 5px 10px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 50%;
+}
