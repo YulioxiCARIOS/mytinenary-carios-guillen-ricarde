@@ -2,7 +2,7 @@
 import './style/App.css';
 import Home from './component/Home';
 import Cities from './component/Cities';
-import CityDetail from './component/CityDetail';
+import CityDetails from './component/CityDetails';
 import { Routes, Route } from "react-router-dom"
 
 //-----LOGICA------
@@ -15,7 +15,7 @@ function App() {// FUNCION DONDE HABITA TODO EL CONTENIDO
         <Route path="*" element={<Home />}></Route>
         <Route path="/Home" element={<Home />}></Route>
         <Route path="/Cities" element={<Cities />}></Route>
-        <Route path="/CityDetail" element={<CityDetail />}></Route>
+        <Route path="/CityDetails/:id" element={<CityDetails />}></Route>
       </Routes>
     </div>
   );

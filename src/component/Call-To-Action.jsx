@@ -5,7 +5,7 @@ function CallToAction() {
   const navigate = useNavigate();
 
   const clickToAction = () => {
-    navigate('/cities'); // Ruta a la que se redirigirá al hacer clic en el botón
+    navigate('/Cities'); // Ruta a la que se redirigirá al hacer clic en el botón
   };
 
   return (
