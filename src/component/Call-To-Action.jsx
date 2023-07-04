@@ -9,13 +9,7 @@ function CallToAction() {
   };
 
   return (
-    <div className="call-to-action">
-      <div className="title">
-        <h1>My Tinerary</h1>
-        <h4>Find your perfect trip, designed by insiders who know and love their cities</h4>
-        <button className="btn-call-to-action" onClick={clickToAction}><FaGlobe /> CITIES</button>
-      </div>
-    </div>
+    <button className="btn-call-to-action" onClick={clickToAction}><FaGlobe /> CITIES</button>
   );
 }
 

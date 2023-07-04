@@ -1,5 +1,5 @@
 import NavBar from "../component/NavBar"
-import CallToAction from "../component/Call-To-Action"
+import Welcome from "../component/Welcome"
 import Carousel from "../component/Carousel"
 import Footer from "../component/Footer"
 
@@ -7,7 +7,7 @@ function Home() {
     return (
         <>
             <NavBar />
-            <CallToAction />
+            <Welcome />
             <Carousel />
             <Footer />
         </>

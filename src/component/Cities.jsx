@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom';
 import "../style/App.css"
 import NavBar from "../component/NavBar";
 import axios from "axios";
 import Footer from "./Footer";
 import { Link as LinkRouter } from 'react-router-dom';
-import { FaArrowUp } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
+import '../style/Carousel.css';
+import Buttons from "../component/Buttons";
+import InputSearch from "./InputSearch";
+
+
 
 function Cities() {
     const [cities, setCities] = useState([])
@@ -23,31 +25,16 @@ function Cities() {
     useEffect(() => {
         console.log(cities)
     }, [cities])
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-
-    // const navigate = useNavigate();
-
-    // const clickCities = () => {
-    //     navigate('/CityDetail'); // Ruta a la que se redirigirá al hacer clic en el botón
-    // };
-
+    
     return (
         <>
             <NavBar />
             <div className="main-cities">
-                <div className="search">
-                    <div className="search-icon"><FaSearch /></div>
-                    <input type="search" placeholder="Find Your City Here.."/>
-                </div>
                 {cities.length > 0 ?
-                    <div className="card-container-cities">
+                    <div className="container-cities">
+                        <InputSearch /> 
                         {cities.map((city, index) =>
+                        <div className="card-container-cities">
                             <div className="card-cities" key={index}>
                                 <img className="image-cities" src={city.image} alt={city.name} />
                                 <div className="row-cities">
@@ -59,15 +46,14 @@ function Cities() {
                                     </div>
                                 </div>
                                 <div className="card-cities-hover">
-                                    <h4>Description:</h4>
-                                    <p>{city.description}</p>
                                     <LinkRouter to={"/CityDetails/" + city._id}><button className="btn-cities">See More...</button></LinkRouter>
                                 </div>
                             </div>
+                            </div>
                         )}
+                        <Buttons />
                     </div>
                     : <h1>Loading...</h1>}
-                <button className="btn-top" onClick={scrollToTop}><FaArrowUp /></button>
             </div >
             <Footer />
         </>

@@ -1,12 +1,11 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import '../style/carousel.css';
+import '../style/Carousel.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
@@ -39,26 +38,26 @@ export default function Carrousel() {
         <SwiperSlide>
           <div className="SwiperSlide">
             <div className='oneOne'>
-              <div className="oneOne-row">
-                <div className='blue'><p>AMSTERMDAM, NETHERLANDS</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Amsterdam, Netherlands</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='oneTwo'>
-              <div className="oneOne-row">
-                <div className='blue'><p>ATHENS, GREECE</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Athens, Grecce</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='oneThree'>
-              <div className="oneOne-row">
-                <div className='blue'><p>BANGKOK, THAILAND</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Bangkok, Thailand</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='oneFour'>
-              <div className="oneOne-row">
-                <div className='blue'><p>BERLIN, GERMANY</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Berlin, Germany</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
@@ -68,26 +67,26 @@ export default function Carrousel() {
         <SwiperSlide>
           <div className="SwiperSlide">
             <div className='twoOne'>
-              <div className="oneOne-row">
-                <div className='blue'><p>CAIRO, EGYPT</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Cairo, Egypto</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='twoTwo'>
-              <div className="oneOne-row">
-                <div className='blue'><p>DUBAI, UNITED ARAB EMIRATES</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Dubai, United Arab Emirates</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='twoThree'>
-              <div className="oneOne-row">
-                <div className='blue'><p>HONG KONG, CHINESE</p></div>
+              <div className="row-cities">
+                <div className='blue'><p><h3>Hong Kong, Chinese</h3></p></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='twoFour'>
-              <div className="oneOne-row">
-                <div className='blue'><p>JOHANNESBURG, SOUTH AFRICA</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Johannesburg, South Africa</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
@@ -96,26 +95,26 @@ export default function Carrousel() {
         <SwiperSlide>
           <div className="SwiperSlide">
             <div className='threeOne'>
-              <div className="oneOne-row">
-                <div className='blue'><p>MEXICO CITY, MEXICO</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Mexico City, Mexico</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='threeTwo'>
-              <div className="oneOne-row">
-                <div className='blue'><p>RIO DE JANEIRO, BRAZIL</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Rio de Janeiro, Brazil</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='threeThree'>
-              <div className="oneOne-row">
-                <div className='blue'><p>SYDNEY AUSTRALIA</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Sydney, Australia</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
             <div className='threeFour'>
-              <div className="oneOne-row">
-                <div className='blue'><p>TORONTO, CANADA</p></div>
+              <div className="row-cities">
+                <div className='blue'><h3>Toronto, Canada</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>

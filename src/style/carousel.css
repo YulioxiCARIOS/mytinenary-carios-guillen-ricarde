@@ -1,5 +1,6 @@
 #app {
     height: 100%;
+    font-family: 'Poppins', sans-serif !important;
 }
 
 html,
@@ -62,11 +63,13 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    row-gap: 25px;
 }
+
+
 
 .SwiperSlide div{
     position: relative;
@@ -75,6 +78,7 @@ body {
     background-size: cover;
     background-position: center;
 }
+
 
 .SwiperSlide div div{
     position: absolute;
@@ -89,10 +93,10 @@ body {
     width: 100%;
     height: 25px;
     display: flex;
+    border-top: 1px solid white;
 }
 
-.SwiperSlide div div .blue p{
-    font-size: 12.5px;
+.SwiperSlide div div .blue h3{
     color: white;
     width: 100%;
     height: 100%;
@@ -100,6 +104,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.SwiperSlide div div .blue h3 span{
+    font-size: 12.5px !important;
 }
 
 .SwiperSlide div div .yellow{
@@ -114,49 +122,49 @@ body {
 }
 
 .oneOne{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAmstermdam(Netherlands).svg?alt=media&token=bf2ef36b-b613-4a3c-bb04-045756176914");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAmstermdam(Netherlands).svg?alt=media&token=d6d1fd1e-919a-49ab-84ad-e612321c3517");
 }
 
 .oneTwo {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAthens(Greece).svg?alt=media&token=92caf3d4-5316-4b88-a225-470c643f51e7");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAthens(Greece).svg?alt=media&token=e4dd1699-6408-4923-8867-f4d62220b7ab");
 }
 
 .oneThree {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FBangkok(Thailand).svg?alt=media&token=6879553e-2397-4677-8341-82bd6d17baf1");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FBangkok(Thailand).svg?alt=media&token=923fb304-0632-4bff-ac39-211ae2990bae");
 }
 
 .oneFour {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FBerlin(Germany).svg?alt=media&token=3273d562-ced5-4ebf-aec9-4cb15d08021c");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FBerlin(Germany).svg?alt=media&token=07b27990-161a-42f5-86a4-76dccd7f7d9b");
 }
 
 .twoOne{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FCairo(Egypt).svg?alt=media&token=065b7876-4671-4636-ba0e-366342cb05a2");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FCairo(Egypt).svg?alt=media&token=a8ee542d-e447-4a9b-99b6-08d5d44b85db");
 }
 
 .twoTwo{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FDubai(United%20Arab%20Emirates).svg?alt=media&token=2aa4a462-db57-4158-91e7-00fc5e0d4ff0");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FDubai(United%20Arab%20Emirates).svg?alt=media&token=294e9633-cc56-453f-ba3c-5b4e990e9a7d");
 }
 
 .twoThree {
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FHong%20Kong(Chinese).svg?alt=media&token=3ef547ea-d295-4e3e-a106-c6ebb789be96");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FHong%20Kong(Chinese).svg?alt=media&token=cb38dafc-5a5e-48a5-8031-ae97fc2b3c9f");
 }
 
 .twoFour{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FJohannesburg(South%20Africa).svg?alt=media&token=d6c705af-9d9a-4231-b911-f69bd664134e");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FJohannesburg(South%20Africa).svg?alt=media&token=0638757f-a9ba-4b80-a89f-2af4c797cc04");
 }
 
 .threeOne{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FMexico%20City(Mexico).svg?alt=media&token=9d74c846-bb5c-4b31-b3d4-fdd4f766d89e")
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FMexico%20City(Mexico).svg?alt=media&token=e99657b0-dae3-44ad-9e97-df6be9034132")
 }
 
 .threeTwo{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FRio%20de%20Janeiro(Brazil).svg?alt=media&token=216f6284-0252-4ee7-861f-309c898695eb");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FRio%20de%20Janeiro(Brazil).svg?alt=media&token=cbefb3b3-5307-461d-a8b1-46b5599822d6");
 }
 
 .threeThree{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FSydney(Australia).svg?alt=media&token=47fddd94-a4a9-47a4-a814-d94bcb1ee57a");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FSydney(Australia).svg?alt=media&token=b200c80b-3e48-4719-91ff-e6ee6e5a1afc");
 }
 
 .threeFour{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FToronto(Canada).svg?alt=media&token=c4164776-0ebf-428c-a2a2-590cc453cd02");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FToronto(Canada).svg?alt=media&token=42cc8305-5efd-498c-aad3-478444b4958e");
 }

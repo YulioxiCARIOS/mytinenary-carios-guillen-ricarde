@@ -28,8 +28,28 @@ function CityDetails() {
                     <div className="image">
                         <img className="image-city" src={city[0].image} alt="" />
                         <div className="citydetails-text">
-                            <h2>{city[0].name}</h2>
-                            <h4>{city[0].country}</h4>
+                            <h4>{city[0].name}, {city[0].country}</h4>
+                            <h4></h4>
+                        </div>
+                        <div className="citydetails">
+                            <h4>Description:</h4>
+                            <h4>{city[0].description}</h4>
+                            <div className="">
+                                <h4 className="">City:</h4>
+                                <h4>{city[0].name}</h4>
+                            </div>
+                            <div>
+                                <h4>Country:</h4>
+                                <h4>{city[0].country}</h4>
+                            </div>
+                            <div>
+                                <h4>Continent:</h4>
+                                <h4>{city[0].continent}</h4>
+                            </div>
+                            <div>
+                                <h4>Language:</h4>
+                                <h4>{city[0].language}</h4>
+                            </div>
                         </div>
                     </div>
 

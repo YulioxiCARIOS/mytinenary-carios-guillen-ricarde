@@ -41,11 +41,8 @@ function Footer() {
                 <div className="links">
                     <h4>Links</h4>
                     <ul>
-                        {/* <li onClick={clickToHome}> Home</li> */}
                         <li onClick={clickToCities}> Cities</li>
                     </ul>
-                </div>
-                <div className="others-links">
                     <h4>Others Links</h4>
                     <ul>
                         <li> Legal Warning</li>
@@ -61,7 +58,9 @@ function Footer() {
                         <li> Federal Capital, Argentina</li>
                     </ul>
                 </div>
-
+                <div className="newslatter">
+                    
+                </div>
             </div>
             <div className="copyright">
                 <p>Copyright @ 2023 by Carios-Guillen-Ricarde</p>
