@@ -291,11 +291,12 @@
   width: 100%;
   height: 100%;
   padding: calc(66.97px + 50px) 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
-.search{
+.input-search{
   display: flex;
-  flex-direction: row;
 }
 
 .search-icon{
@@ -315,7 +316,15 @@ input{
   border-radius: 0px 25px 25px 0px;
   border: 1px solid var(--yellow);
   padding-left: 15px;
+  display: flex;
 }
+
+.search{
+  width: 100%;
+}
+
+
+
 
 .container-cities{
   margin-top: 50px;
@@ -331,6 +340,7 @@ input{
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap:50px;
 }
 
 .card-cities {
@@ -341,8 +351,13 @@ input{
 
 .image-cities{
   width: 300px;
-  height: 250px;
+  height: 275px;
   border-bottom: 1px solid white;
+  
+  overflow: hidden;
+    display: flex;
+    object-fit: cover;
+    object-position: center;
 }
 
 .row-cities {
@@ -389,7 +404,7 @@ input{
   background-color: var(--yellow);
   top: 0px; left: 0px;
   width: 300px;
-  height: 250px;
+  height: 275px;
   padding: 15px;
   border-bottom: 1px solid white;
   opacity: 0;
@@ -439,22 +454,19 @@ input{
   margin: 0px;
 }
 
-.image-city{
-  position: relative;
+.image.city img{
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-    display: flex;
-    object-fit: cover;
-    object-position: center;
 }
 
-.citydetails-text{
+
+
+/* .citydetails-text{
   background-color: var(--blue1);
   color: var(--yellow);
   position: absolute;
   bottom: 0; left: 0;
-}
+} */
 
 .citydetails-text h4{
   font-weight: 900;

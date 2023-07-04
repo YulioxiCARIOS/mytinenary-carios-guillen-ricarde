@@ -25,7 +25,7 @@ function CityDetails() {
             <NavBar />
             <div className="main-citydetails">
                 {city.length > 0 ?
-                    <div className="image">
+                    <div className="details">
                         <img className="image-city" src={city[0].image} alt="" />
                         <div className="citydetails-text">
                             <h4>{city[0].name}, {city[0].country}</h4>

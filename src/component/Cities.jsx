@@ -25,32 +25,32 @@ function Cities() {
     useEffect(() => {
         console.log(cities)
     }, [cities])
-    
+
     return (
         <>
             <NavBar />
             <div className="main-cities">
                 {cities.length > 0 ?
                     <div className="container-cities">
-                        <InputSearch /> 
-                        {cities.map((city, index) =>
+                        <InputSearch />
                         <div className="card-container-cities">
-                            <div className="card-cities" key={index}>
-                                <img className="image-cities" src={city.image} alt={city.name} />
-                                <div className="row-cities">
-                                    <div className="location-cities">
+                            {cities.map((city, index) =>
+                                <div className="card-cities" key={index}>
+                                    <img className="image-cities" src={city.image} alt={city.name} />
+                                    <div className="row-cities">
+                                        <div className="location-cities">
 
+                                        </div>
+                                        <div className="text-cities">
+                                            <h3>{city.name}, <span>{city.country}</span></h3>
+                                        </div>
                                     </div>
-                                    <div className="text-cities">
-                                        <h3>{city.name}, <span>{city.country}</span></h3>
+                                    <div className="card-cities-hover">
+                                        <LinkRouter to={"/CityDetails/" + city._id}><button className="btn-cities">See More...</button></LinkRouter>
                                     </div>
                                 </div>
-                                <div className="card-cities-hover">
-                                    <LinkRouter to={"/CityDetails/" + city._id}><button className="btn-cities">See More...</button></LinkRouter>
-                                </div>
-                            </div>
-                            </div>
-                        )}
+                            )}
+                        </div>
                         <Buttons />
                     </div>
                     : <h1>Loading...</h1>}
