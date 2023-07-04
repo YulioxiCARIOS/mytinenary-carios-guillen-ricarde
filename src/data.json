@@ -150,7 +150,7 @@
             "continent": "Asia",
             "language": "Japanese",
             "description": "Brimming with culture, commerce and, above all, people. The core of the world's most populous urban area, Tokyo is a fascinating and dynamic metropolis that brings high-tech visions of the future.",
-            "image": "https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FTokyo(Japan).svg?alt=media&token=f94357f0-f3b9-4e40-aab3-0fc964bb6f16"
+            "image": "https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FTokyo(Japan).svg?alt=media&token=1b41d557-3ab8-4952-aa97-0c5bcec32a29"
         },
         {
             "name": "Toronto",
@@ -158,7 +158,7 @@
             "continent": "North America",
             "language": "English",
             "description": "Its great tourist attraction is the proximity of Niagara Falls, but it does have enough attractions to spend a couple of interesting days in the city.",
-            "image": "https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FToronto(Canada).svg?alt=media&token=42cc8305-5efd-498c-aad3-478444b4958e"
+            "image": "https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FToronto(Canada).svg?alt=media&token=5fec596c-313c-479e-89b5-5e2c79a130fa"
         }
     ]
 }
