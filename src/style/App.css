@@ -569,7 +569,7 @@ input {
 
 .details-citydetails h3{
   font-size: 15px !important;
-  color: white;
+  color: var(--blue2);
   font-weight: 400;
   padding-bottom: 50px;
   margin: 0;

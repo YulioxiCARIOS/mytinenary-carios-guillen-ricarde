@@ -7,6 +7,9 @@ import { Link as LinkRouter } from 'react-router-dom';
 import '../style/Carousel.css';
 import Buttons from "../component/Buttons";
 import { FaSearch } from "react-icons/fa";
+// import React from 'react';
+// import { Plane } from '@bit/mhnpd.react-loader-spinner.plane';
+// import { getRandomColor } from '@bit/joshk.jotils.get-random-color'
 
 
 
@@ -75,7 +78,14 @@ function Cities() {
                         </div>
                         <Buttons />
                     </div>
-                    : <h1>Loading...</h1>}
+                    : <div>
+                        {/* <Plane
+                    color={getRandomColor()}
+                    height={150}
+                    width={150}
+                /> */} Loading
+                </div >
+                        }
             </div >
             <Footer />
         </>
