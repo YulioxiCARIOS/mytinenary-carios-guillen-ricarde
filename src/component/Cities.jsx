@@ -6,25 +6,44 @@ import Footer from "./Footer";
 import { Link as LinkRouter } from 'react-router-dom';
 import '../style/Carousel.css';
 import Buttons from "../component/Buttons";
-import InputSearch from "./InputSearch";
+import { FaSearch } from "react-icons/fa";
 
 
 
 function Cities() {
-    const [cities, setCities] = useState([])
+    const [cities, setCities] = useState([]);
+    const [search, setSearch] = useState("");
+
     let citiesDb
     async function getData() {
         citiesDb = await axios.get("http://localhost:4000/api/cities")
         setCities(citiesDb.data.response.cities)
         console.log(citiesDb)
     }
+
+    const input=e=>{
+        setSearch(e.target.value)
+        filtered(e.target.value);
+    }
+
+    const filtered=(inputSearch)=>{
+        var resultSearch=cities.filter((element)=>{
+            if(element.name.toLowerCase().startsWith(inputSearch.toLowerCase())){
+            return (element)
+            }
+            else if(cities.length === 0){
+                return(
+           <h1>No se encontro</h1>
+            )}
+        })
+        setCities(resultSearch)
+    }
+
     useEffect(() => {
         getData()
-
     }, [])
-    useEffect(() => {
-        console.log(cities)
-    }, [cities])
+
+
 
     return (
         <>
@@ -32,7 +51,10 @@ function Cities() {
             <div className="main-cities">
                 {cities.length > 0 ?
                     <div className="container-cities">
-                        <InputSearch />
+                        <div className="input-search">
+                            <div className="search-icon"><FaSearch /></div>
+                            <input type="search" value={search} placeholder="Find Your City Here.." onChange={input} />
+                        </div>
                         <div className="card-container-cities">
                             {cities.map((city, index) =>
                                 <div className="card-cities" key={index}>
@@ -46,7 +68,7 @@ function Cities() {
                                         </div>
                                     </div>
                                     <div className="card-cities-hover">
-                                        <LinkRouter to={"/CityDetails/" + city._id}><button className="btn-cities">See More...</button></LinkRouter>
+                                        <LinkRouter to={"/CityDetails/" + city._id}><button className="btn-cities">See Details..</button></LinkRouter>
                                     </div>
                                 </div>
                             )}

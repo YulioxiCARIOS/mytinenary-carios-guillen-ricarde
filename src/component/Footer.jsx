@@ -3,6 +3,7 @@ import InstagramLink from "./LinkInsta";
 import FacebookLink from "./LinkFace";
 import TwitwLink from "./LinkTwi";
 import YouTLink from "./LinkYouT";
+import { FaPaperPlane } from "react-icons/fa";
 
 function Footer() {
 
@@ -59,7 +60,11 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="newslatter">
-                    
+                    <h3>Subscribe To Our Newsletter</h3>
+                    <div className='row-newslatter'>
+                        <input type="email" placeholder='Enter Your Email'/>
+                        <button className='btn-newslatter'><FaPaperPlane></FaPaperPlane></button>
+                    </div>
                 </div>
             </div>
             <div className="copyright">

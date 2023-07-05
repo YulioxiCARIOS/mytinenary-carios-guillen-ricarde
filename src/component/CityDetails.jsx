@@ -25,7 +25,7 @@ function CityDetails() {
         getCity(id)
     }, [])
 
-    
+
     const navigate = useNavigate();
 
     const clickToActivities = () => {
@@ -46,26 +46,28 @@ function CityDetails() {
                         <div className="details-citydetails">
                             <h2>Description:</h2>
                             <h3>{city[0].description}</h3>
-                            <div className="row-details-citydetails">
-                                <h4 className="key-row-details-citydetails"><FaBuilding/> City</h4>
-                                <h4 className="value-row-details-citydetails">: {city[0].name}</h4>
-                            </div>
-                            <div className="row-details-citydetails">
-                                <h4 className="key-row-details-citydetails"><FaGlobeAmericas/> Country</h4>
-                                <h4 className="value-row-details-citydetails">: {city[0].country}</h4>
-                            </div>
-                            <div className="row-details-citydetails">
-                                <h4 className="key-row-details-citydetails"><FaGlobe/> Continent</h4>
-                                <h4 className="value-row-details-citydetails">: {city[0].continent}</h4>
-                            </div>
-                            <div className="row-details-citydetails">
-                                <h4 className="key-row-details-citydetails"><FaAtlas/> Language</h4>
-                                <h4 className="value-row-details-citydetails">: {city[0].language}</h4>
+                            <div className="container-details-citydetails">
+                                <div className="row-details-citydetails">
+                                    <h4 className="key-row-details-citydetails"><FaBuilding /> City</h4>
+                                    <h4 className="value-row-details-citydetails">: {city[0].name}</h4>
+                                </div>
+                                <div className="row-details-citydetails">
+                                    <h4 className="key-row-details-citydetails"><FaGlobeAmericas /> Country</h4>
+                                    <h4 className="value-row-details-citydetails">: {city[0].country}</h4>
+                                </div>
+                                <div className="row-details-citydetails">
+                                    <h4 className="key-row-details-citydetails"><FaGlobe /> Continent</h4>
+                                    <h4 className="value-row-details-citydetails">: {city[0].continent}</h4>
+                                </div>
+                                <div className="row-details-citydetails">
+                                    <h4 className="key-row-details-citydetails"><FaAtlas /> Language</h4>
+                                    <h4 className="value-row-details-citydetails">: {city[0].language}</h4>
+                                </div>
                             </div>
                         </div>
                         <button className="btn-activities" onClick={clickToActivities}>See Activities...</button>
                     </div>
-                    
+
                     : <h1>Loading...</h1>}
             </div >
             <Footer />
