@@ -1,12 +1,12 @@
 {
     "data": [
         {
-            "name": "Amstermdam",
+            "name": "Amsterdam",
             "country": "Netherland",
             "continent": "Europe",
             "language": "Dutch",
             "description": "Founded in the 13th century as a small fishing village, it is currently the largest city in the country and a major financial and cultural center of international projection.",
-            "image": "https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAmstermdam(Netherlands).svg?alt=media&token=d6d1fd1e-919a-49ab-84ad-e612321c3517"
+            "image": "https://firebasestorage.googleapis.com/v0/b/mytinerary-1fb0d.appspot.com/o/Cities%2FAmstermdam(Netherlands).svg?alt=media&token=d7c1f050-0737-4966-9ed1-afc0c5127a49"
         },
         {
             "name": "Athens",

@@ -3,6 +3,11 @@ import Footer from "./Footer"
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from 'react-router-dom';
+import { FaBuilding } from "react-icons/fa";
+import { FaGlobeAmericas } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import { FaAtlas } from "react-icons/fa";
 
 function CityDetails() {
 
@@ -20,39 +25,47 @@ function CityDetails() {
         getCity(id)
     }, [])
 
+    
+    const navigate = useNavigate();
+
+    const clickToActivities = () => {
+        navigate('/Activities'); // Ruta a la que se redirigirá al hacer clic en el botón
+    };
+
     return (
         <>
             <NavBar />
             <div className="main-citydetails">
                 {city.length > 0 ?
-                    <div className="details">
-                        <img className="image-city" src={city[0].image} alt="" />
-                        <div className="citydetails-text">
+                    <div className="container-citydetails">
+                        <img className="image-citydetails" src={city[0].image} alt="" />
+                        <div className="text-citydetails">
+                            <div className="location"></div>
                             <h4>{city[0].name}, {city[0].country}</h4>
-                            <h4></h4>
                         </div>
-                        <div className="citydetails">
-                            <h4>Description:</h4>
-                            <h4>{city[0].description}</h4>
-                            <div className="">
-                                <h4 className="">City:</h4>
-                                <h4>{city[0].name}</h4>
+                        <div className="details-citydetails">
+                            <h2>Description:</h2>
+                            <h3>{city[0].description}</h3>
+                            <div className="row-details-citydetails">
+                                <h4 className="key-row-details-citydetails"><FaBuilding/> City</h4>
+                                <h4 className="value-row-details-citydetails">: {city[0].name}</h4>
                             </div>
-                            <div>
-                                <h4>Country:</h4>
-                                <h4>{city[0].country}</h4>
+                            <div className="row-details-citydetails">
+                                <h4 className="key-row-details-citydetails"><FaGlobeAmericas/> Country</h4>
+                                <h4 className="value-row-details-citydetails">: {city[0].country}</h4>
                             </div>
-                            <div>
-                                <h4>Continent:</h4>
-                                <h4>{city[0].continent}</h4>
+                            <div className="row-details-citydetails">
+                                <h4 className="key-row-details-citydetails"><FaGlobe/> Continent</h4>
+                                <h4 className="value-row-details-citydetails">: {city[0].continent}</h4>
                             </div>
-                            <div>
-                                <h4>Language:</h4>
-                                <h4>{city[0].language}</h4>
+                            <div className="row-details-citydetails">
+                                <h4 className="key-row-details-citydetails"><FaAtlas/> Language</h4>
+                                <h4 className="value-row-details-citydetails">: {city[0].language}</h4>
                             </div>
                         </div>
+                        <button className="btn-activities" onClick={clickToActivities}>See Activities...</button>
                     </div>
-
+                    
                     : <h1>Loading...</h1>}
             </div >
             <Footer />
