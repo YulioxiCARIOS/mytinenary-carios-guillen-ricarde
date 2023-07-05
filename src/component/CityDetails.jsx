@@ -8,6 +8,10 @@ import { FaBuilding } from "react-icons/fa";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
 import { FaAtlas } from "react-icons/fa";
+import Buttons from "../component/Buttons";
+import { Plane } from "./Plane";
+import "../style/Plane.css"
+import "../style/App.css"
 
 function CityDetails() {
 
@@ -68,7 +72,8 @@ function CityDetails() {
                         <button className="btn-activities" onClick={clickToActivities}>See Activities...</button>
                     </div>
 
-                    : <h1>Loading...</h1>}
+                    : <div className="plane"><Plane /></div>}
+                    <Buttons />
             </div >
             <Footer />
         </>

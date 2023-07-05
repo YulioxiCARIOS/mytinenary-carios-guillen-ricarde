@@ -202,14 +202,21 @@ html::-webkit-scrollbar-thumb{
 }
 
 .footer-row>div>h4 {
-  font-size: 20px;
+  font-size: 25px !important;
   font-weight: 900;
   color: var(--blue2);
 }
 
 .footer-row>div>h3 {
   font-size: 17.5px;
-  font-weight: 900;
+  font-weight: 600;
+}
+
+.newslatter h3{
+  font-size: 25px !important;
+  font-weight: 600;
+  color: white;
+  text-align: left;
 }
 
 .footer-row>div>p {
@@ -479,26 +486,22 @@ input {
 }
 
 .card-cities-hover .btn-cities {
-  font-size: 15px !important;
+  font-size: 17.5px !important;
   font-weight: 600;
-  background-color: var(--blue2);
   color: white;
   width: auto;
   border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-   margin-top: 207.5px;
-  /*text-shadow: 1px 1px 1px black */
-  /* background-color: transparent; */
+  margin-top: 207.5px;
+  text-shadow: 1px 1px 1px black;
+  background-color: transparent;
 }
 
 .btn-top {
   font-size: 15px;
   color: white;
-  background-color: var(--yellow);
+  background-color: var(--blue2);
   width: 50px;
   height: 50px;
-  margin-top: 50px;
   border: none;
   border-radius: 50%;
 }
@@ -654,4 +657,46 @@ input {
   font-weight: 900;
   color: var(--blue1);
   margin: 0;
+}
+
+.plane{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dont-find{
+  padding-top: 50px;
+}
+
+.dont-find h2{
+  font-size: 50px !important;
+  font-weight: 900;
+  color: var(--blue1);
+}
+
+.dont-find svg{
+  font-size: 100px !important;
+  color: var(--yellow);
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 75px;
+}
+
+.nav-bar-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.nav-bar-buttons button{
+  background-color: var(--blue2);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
 }

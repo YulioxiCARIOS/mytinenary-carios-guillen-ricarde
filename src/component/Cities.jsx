@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../style/App.css"
+import "../style/Plane.css"
 import NavBar from "./NavBar";
 import axios from "axios";
 import Footer from "./Footer";
@@ -8,9 +9,7 @@ import '../style/Carousel.css';
 import Buttons from "../component/Buttons";
 import { Plane } from "./Plane";
 import { FaSearch } from "react-icons/fa";
-// import React from 'react';
-// import { Plane } from '@bit/mhnpd.react-loader-spinner.plane';
-// import { getRandomColor } from '@bit/joshk.jotils.get-random-color'
+import { FaPlane } from "react-icons/fa";
 
 
 
@@ -34,7 +33,7 @@ function Cities() {
 
     const filtered = (inputSearch) => {
         var resultSearch = arrayToFilter.filter((element) => {
-            if (element.name.toLowerCase().startsWith(inputSearch.toLowerCase())) {
+            if (element.name.toLowerCase().trim().startsWith(inputSearch.toLowerCase())) {
                 return (element)
             }
         })
@@ -75,10 +74,10 @@ function Cities() {
                                 </div>
                             )}
                         </div>
-                        <Buttons />
                     </div>
-                    : search === ""? <Plane/> :<div><h1>No se encontro</h1></div>
+                    : search === "" ? <div className="plane"><Plane /></div> : <div className="dont-find"><h2>Don't Find The City Of Your Search</h2><FaPlane /></div>
                 }
+                <Buttons />
             </div >
             <Footer />
         </>

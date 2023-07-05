@@ -23,7 +23,7 @@ function Buttons() {
 
     return(
         <div className="buttons">
-            <div className="nav-bar">
+            <div className="nav-bar-buttons">
                 <button onClick={clickToHome}>Home</button>
                 <button onClick={clickToCities}>Cities</button>
             </div>

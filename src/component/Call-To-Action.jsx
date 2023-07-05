@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { FaGlobe } from "react-icons/fa";
+import { FaPlane } from "react-icons/fa";
 
 function CallToAction() {
   const navigate = useNavigate();
@@ -9,7 +9,7 @@ function CallToAction() {
   };
 
   return (
-    <button className="btn-call-to-action" onClick={clickToAction}><FaGlobe /> CITIES</button>
+    <button className="btn-call-to-action" onClick={clickToAction}><FaPlane /> CITIES</button>
   );
 }
 
