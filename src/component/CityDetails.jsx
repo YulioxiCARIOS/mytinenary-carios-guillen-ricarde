@@ -18,7 +18,7 @@ function CityDetails() {
 
     async function getCity(id) {
         let cityDB
-        cityDB = await axios.get("http://localhost:4000/api/cities/" + id)
+        cityDB = await axios.get("https://zoralia-guillen-api-cities-crud.onrender.com/api/cities/" + id)
         setCity(cityDB.data.response)
     }
     useEffect(() => {

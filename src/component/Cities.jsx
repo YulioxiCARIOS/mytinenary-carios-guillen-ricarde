@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import "../style/App.css"
-import NavBar from "../component/NavBar";
+import NavBar from "./NavBar";
 import axios from "axios";
 import Footer from "./Footer";
 import { Link as LinkRouter } from 'react-router-dom';
 import '../style/Carousel.css';
 import Buttons from "../component/Buttons";
+import { Plane } from "./Plane";
 import { FaSearch } from "react-icons/fa";
 // import React from 'react';
 // import { Plane } from '@bit/mhnpd.react-loader-spinner.plane';
@@ -16,28 +17,26 @@ import { FaSearch } from "react-icons/fa";
 function Cities() {
     const [cities, setCities] = useState([]);
     const [search, setSearch] = useState("");
+    const [arrayToFilter, setArrayToFilter] = useState([]);
 
     let citiesDb
     async function getData() {
-        citiesDb = await axios.get("http://localhost:4000/api/cities")
+        citiesDb = await axios.get("https://zoralia-guillen-api-cities-crud.onrender.com/api/cities")
         setCities(citiesDb.data.response.cities)
+        setArrayToFilter(citiesDb.data.response.cities)
         console.log(citiesDb)
     }
 
-    const input=e=>{
+    const input = e => {
         setSearch(e.target.value)
         filtered(e.target.value);
     }
 
-    const filtered=(inputSearch)=>{
-        var resultSearch=cities.filter((element)=>{
-            if(element.name.toLowerCase().startsWith(inputSearch.toLowerCase())){
-            return (element)
+    const filtered = (inputSearch) => {
+        var resultSearch = arrayToFilter.filter((element) => {
+            if (element.name.toLowerCase().startsWith(inputSearch.toLowerCase())) {
+                return (element)
             }
-            else if(cities.length === 0){
-                return(
-           <h1>No se encontro</h1>
-            )}
         })
         setCities(resultSearch)
     }
@@ -46,18 +45,18 @@ function Cities() {
         getData()
     }, [])
 
-
+    console.log(search)
 
     return (
         <>
             <NavBar />
             <div className="main-cities">
+                <div className="input-search">
+                    <div className="search-icon"><FaSearch /></div>
+                    <input type="search" value={search} placeholder="Find Your City Here.." onChange={input} />
+                </div>
                 {cities.length > 0 ?
                     <div className="container-cities">
-                        <div className="input-search">
-                            <div className="search-icon"><FaSearch /></div>
-                            <input type="search" value={search} placeholder="Find Your City Here.." onChange={input} />
-                        </div>
                         <div className="card-container-cities">
                             {cities.map((city, index) =>
                                 <div className="card-cities" key={index}>
@@ -78,14 +77,8 @@ function Cities() {
                         </div>
                         <Buttons />
                     </div>
-                    : <div>
-                        {/* <Plane
-                    color={getRandomColor()}
-                    height={150}
-                    width={150}
-                /> */} Loading
-                </div >
-                        }
+                    : search === ""? <Plane/> :<div><h1>No se encontro</h1></div>
+                }
             </div >
             <Footer />
         </>
