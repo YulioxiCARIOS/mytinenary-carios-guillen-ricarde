@@ -5,7 +5,7 @@ import NavBar from "./NavBar";
 import axios from "axios";
 import Footer from "./Footer";
 import { Link as LinkRouter } from 'react-router-dom';
-import '../style/Carousel.css';
+import '../style/carousel.css';
 import Buttons from "../component/Buttons";
 import { Plane } from "./Plane";
 import { FaSearch } from "react-icons/fa";
