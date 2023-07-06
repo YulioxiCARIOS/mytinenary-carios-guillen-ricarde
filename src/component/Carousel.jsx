@@ -80,7 +80,7 @@ export default function Carrousel() {
             </div>
             <div className='twoThree'>
               <div className="row-cities">
-                <div className='blue'><p><h3>Hong Kong, Chinese</h3></p></div>
+                <div className='blue'><h3>Hong Kong, Chinese</h3></div>
                 <div className='yellow'></div>
               </div>
             </div>
