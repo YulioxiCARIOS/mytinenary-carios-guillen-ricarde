@@ -10,24 +10,29 @@ import Buttons from "../component/Buttons";
 import { Plane } from "./Plane";
 import { FaSearch } from "react-icons/fa";
 import { FaPlane } from "react-icons/fa";
+// import { useDispatch, useSelector } from "react-redux";
 
 
 
 function Cities() {
+    // const dispatch=useDispatch()
     const [cities, setCities] = useState([]);
     const [search, setSearch] = useState("");
     const [arrayToFilter, setArrayToFilter] = useState([]);
+
+// let filteredArray=useSelector(store=>store.citiesReducer.searchResult)
 
     let citiesDb
     async function getData() {
         citiesDb = await axios.get("https://zoralia-guillen-api-cities-crud.onrender.com/api/cities")
         setCities(citiesDb.data.response.cities)
         setArrayToFilter(citiesDb.data.response.cities)
-        console.log(citiesDb)
+        console.log(citiesDb.data.response.cities)
     }
 
     const input = e => {
         setSearch(e.target.value)
+        
         filtered(e.target.value);
     }
 

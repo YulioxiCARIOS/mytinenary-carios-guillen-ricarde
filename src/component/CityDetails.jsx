@@ -10,7 +10,7 @@ import { FaGlobe } from "react-icons/fa";
 import { FaAtlas } from "react-icons/fa";
 import Buttons from "../component/Buttons";
 import { Plane } from "./Plane";
-import "../style/Plane.css"
+import "../style/Plane.css";
 import "../style/App.css"
 
 function CityDetails() {
